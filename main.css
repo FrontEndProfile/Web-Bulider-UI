@@ -1,0 +1,214 @@
+*,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F9FAFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+.modal_edit {
+    display: none;
+}
+
+.open_modal {
+    padding: 15px 60px;
+}
+.modal_edit {
+    min-width: 525px;
+    max-width: 525px;
+    outline: 1px solid rgba(0, 0, 0, 0.148);
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    translate: -50%;
+}
+.close_modal {
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background: rgb(226, 237, 255);
+    display: grid;
+    place-items: center;
+    padding: 4px;
+}
+.close_modal img {
+    width: 100%;
+}
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px;
+    padding-bottom: 152px;
+    background: #106DFF;
+    color: white;
+}
+.modal-body {
+  padding: 0px 17px;  
+  margin-top: -50px;
+}
+.profile-component {
+    padding: 18px 15px;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.component-tittle {
+    font-size: 18px;
+    padding-bottom: 19px;
+}
+.component-select {
+    width: 216px;
+    height: 97px;
+    padding-block: 13px;
+    background: #106DFF12;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+.component-select-img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 9px;
+}
+.component-select-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.component-select-tittle {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.component-select-info {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 400;
+}
+.components {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.component-adjustment {
+    width: 140px;
+    height: 110px;
+    background: #F2F7FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.3s ease-out;
+    margin-bottom: 15px;
+}
+.component-adjustment:hover {
+    background: #106DFF;
+    color: white;
+}
+.component-adjustment-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+}
+.component-adjustment-icon img{
+    /* background: #106cff60; */
+    border-radius: 4px;
+}
+.component-adjustment-tittle {
+    font-size: 15px;
+    font-weight: normal;
+}
+.component-adjustment.long {
+    width: 300px;
+    height: 110px;
+}
+.component-adjustment.long:hover {
+    background:#F2F7FA;
+    color: #000000;
+}
+.component-adjustment.long .component-adjustment-icon{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.component-adjustment.long .component-adjustment-icon img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.component-adjustment-tittle {
+    word-wrap: unset;
+    font-size: 15px;
+    font-weight: normal;
+}
+.component-adjustment-quantity {
+    width: 240px;
+    border-radius: 60px;
+    background: white;
+    height: 30px;
+    /* overflow: hidden; */
+}
+.quantity-bar {
+    height: 100%;
+    position: relative;
+}
+.quantity-bar-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 20%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 60px;
+}
+.quantity-bar-content::placeholder {
+    color: #106DFF;
+    font-weight: 500;
+    opacity: 1;
+}
+.quantity-bar-btn {
+    position: absolute;
+    left: -10px;
+    top: -2px;
+    width: 32px;
+    height: 32px;
+    background: #106DFF;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+}
+
+.quantity-bar-btn.plus {
+    right: -10px;
+    left: auto;
+}
+
+
+
+
+
+
