@@ -1,16 +1,20 @@
-*,body {
+*,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background: #F9FAFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
 a {
     text-decoration: none;
 }
+
 .modal_edit {
     display: none;
     height: 800px;
@@ -20,6 +24,7 @@ a {
 .open_modal {
     padding: 15px 60px;
 }
+
 .modal_edit {
     min-width: 525px;
     max-width: 525px;
@@ -29,6 +34,7 @@ a {
     top: 100px;
     translate: -50%;
 }
+
 .close_modal {
     height: 27px;
     width: 27px;
@@ -38,9 +44,11 @@ a {
     place-items: center;
     padding: 4px;
 }
+
 .close_modal img {
     width: 100%;
 }
+
 .modal-header {
     display: flex;
     align-items: center;
@@ -50,10 +58,12 @@ a {
     background: #106DFF;
     color: white;
 }
+
 .modal-body {
-  padding: 0px 17px;  
-  margin-top: -50px;
+    padding: 0px 17px;
+    margin-top: -50px;
 }
+
 .profile-component {
     padding: 18px 15px;
     background: #ffffff;
@@ -61,10 +71,12 @@ a {
     border-radius: 4px;
     margin-bottom: 15px;
 }
+
 .component-tittle {
     font-size: 18px;
     padding-bottom: 19px;
 }
+
 .component-select {
     width: 216px;
     height: 97px;
@@ -78,31 +90,37 @@ a {
 
     position: relative;
 }
+
 .tooltip {
     position: absolute;
     left: 10px;
     top: 6px;
 }
+
 .component-select-img {
     width: 16px;
     height: 16px;
     margin-bottom: 9px;
 }
+
 .component-select-img img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
+
 .component-select-tittle {
     margin-bottom: 8px;
     font-size: 15px;
     font-weight: normal;
 }
+
 .component-select-info {
     font-size: 14px;
     color: #808080;
     font-weight: 400;
 }
+
 .components {
     display: flex;
     justify-content: space-between;
@@ -121,47 +139,57 @@ a {
     transition: 0.3s ease-out;
     margin-bottom: 15px;
 }
+
 .component-adjustment:hover {
     background: #106DFF;
     color: white;
 }
+
 .component-adjustment-icon {
     width: 30px;
     height: 30px;
     margin-bottom: 20px;
     border: none;
 }
-.component-adjustment-icon img{
+
+.component-adjustment-icon img {
     /* background: #106cff60; */
     border-radius: 4px;
 }
+
 .component-adjustment-tittle {
     font-size: 15px;
     font-weight: normal;
 }
+
 .component-adjustment.long {
     width: 300px;
     height: 110px;
 }
+
 .component-adjustment.long:hover {
-    background:#F2F7FA;
+    background: #F2F7FA;
     color: #000000;
 }
-.component-adjustment.long .component-adjustment-icon{
+
+.component-adjustment.long .component-adjustment-icon {
     display: flex;
     align-items: center;
     width: fit-content;
 }
-.component-adjustment.long .component-adjustment-icon img{
+
+.component-adjustment.long .component-adjustment-icon img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
 }
+
 .component-adjustment-tittle {
     word-wrap: unset;
     font-size: 15px;
     font-weight: normal;
 }
+
 .component-adjustment-quantity {
     width: 240px;
     border-radius: 60px;
@@ -169,10 +197,12 @@ a {
     height: 30px;
     /* overflow: hidden; */
 }
+
 .quantity-bar {
     height: 100%;
     position: relative;
 }
+
 .quantity-bar-content {
     width: 100%;
     height: 100%;
@@ -183,11 +213,13 @@ a {
     font-weight: 400;
     border-radius: 60px;
 }
+
 .quantity-bar-content::placeholder {
     color: #106DFF;
     font-weight: 500;
     opacity: 1;
 }
+
 .quantity-bar-btn {
     position: absolute;
     left: -10px;
@@ -212,22 +244,25 @@ a {
 .modal_edit {
     position: relative;
 }
+
 .modal-footer {
     position: sticky;
     height: 87px;
     background: #106DFF;
-    width: 100%;  
+    width: 100%;
     bottom: 0;
     left: 0;
     padding-inline: 17px;
     display: flex;
     align-items: center;
 }
+
 .modal-footer-btns {
     display: flex;
     align-items: center;
     grid-column-gap: 15px;
 }
+
 .modal-footer-btn {
     background: white;
     border-radius: 30px;
@@ -237,6 +272,7 @@ a {
     display: flex;
     align-items: center;
 }
+
 .modal-footer-btn .icon {
     width: 12px;
     height: 12px;
@@ -245,12 +281,14 @@ a {
 
     margin-right: 6px;
 }
+
 .modal-footer-powered .icon {
     width: 30px;
     height: 30px;
     background: white;
     margin-bottom: 5px;
 }
+
 .modal-footer-powered {
     display: flex;
     flex-direction: column;
@@ -260,6 +298,7 @@ a {
     color: white;
     margin-left: auto;
 }
+
 .modal-footer {
     display: flex;
     justify-content: space-between;
@@ -271,9 +310,11 @@ a {
     width: 16px;
     height: 20px;
 }
+
 .component-adjustment-quantity #one {
     text-indent: red;
 }
+
 /* =========================  */
 /* =========================  */
 /* =========================  */
@@ -283,57 +324,152 @@ a {
         min-width: 92%;
         max-width: 100%;
     }
+
     .component-select {
         width: 75%;
     }
+
     .components {
         justify-content: center;
         grid-column-gap: 15px;
+    }
+    
+}
+@media (max-width:460px) {
+    .component-select {
+        width: 95%;
+    }
+    .component-adjustment {
+        width: 95%;
+    }
+
+    .component-adjustment.long {
+        width: 95%;
+        padding-inline: 10px;
     }
 }
 @media (max-width:360px) {
     .component-select {
         width: 95%;
     }
+
     .close_modal {
         height: 22px;
         width: 22px;
         padding: 4px;
     }
+
     .modal-header-tittle {
         font-size: 14px;
     }
+
     .modal-header {
         padding: 14px;
         padding-bottom: 90px;
     }
+
     .component-tittle {
         font-size: 17px;
         padding-bottom: 14px;
     }
+
     .component-adjustment {
         width: 95%;
     }
+
     .component-adjustment.long {
         width: 95%;
         padding-inline: 10px;
     }
+
     .component-adjustment-quantity {
         width: 200px;
     }
+
     .component-adjustment.long .component-adjustment-icon img {
         margin-right: 8px;
         width: 25px;
         height: 25px;
     }
+
     .component-adjustment-icon-tittle {
         font-size: 14px;
     }
+
     .modal-body {
         padding: 0px 12px;
     }
 }
 
+.form-radio {
+    padding-top: 22px;
+}
 
+.form-radio .component-adjustment-icon {
+    width: 100% !important;
+    justify-content: center;
+    padding-top: 20px;
+}
 
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    background-color: white;
+    border-radius: 50%;
 
+}
+input[type="radio"]:nth-child(2) {
+    background-color: red;
+}
+input[type="radio"]:nth-child(3) {
+    background-color: green;
+}
+input[type="radio"]:nth-child(4) {
+    background-color: greenyellow;
+}
+input[type="radio"]:nth-child(5) {
+    background-color: goldenrod;
+}
+input[type="radio"]:nth-child(6) {
+    background-color: palevioletred;
+}
+input[type="radio"]:nth-child(7) {
+    background-color: rgb(49, 134, 133);
+}
+input[type="radio"]:nth-child(8) {
+    background-color: rgb(101, 98, 41);
+}
+
+input[type='radio']:checked:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid black;
+}
+input[type='radio']:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid transparent;
+}
