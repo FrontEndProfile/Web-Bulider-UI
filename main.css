@@ -9,6 +9,8 @@ body {
     background: #F9FAFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    min-height: 100vh;
+    display: flex;
 }
 
 a {
@@ -54,7 +56,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 17px;
-    padding-bottom: 152px;
+    padding-bottom: 85px;
     background: #106DFF;
     color: white;
 }
@@ -63,6 +65,11 @@ a {
     padding: 0px 17px;
     margin-top: -50px;
 }
+.modal-header-tittle {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
 
 .profile-component {
     padding: 18px 15px;
@@ -70,11 +77,19 @@ a {
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 4px;
     margin-bottom: 15px;
+    /* width: 492px; */
+
 }
 
 .component-tittle {
     font-size: 18px;
     padding-bottom: 19px;
+    font-weight: 400;
+}
+.component-select-tittle {
+	margin-bottom: 12px;
+	font-size: 15px;
+	font-weight: 400;
 }
 
 .component-select {
@@ -152,10 +167,6 @@ a {
     border: none;
 }
 
-.component-adjustment-icon img {
-    /* background: #106cff60; */
-    border-radius: 4px;
-}
 
 .component-adjustment-tittle {
     font-size: 15px;
@@ -235,10 +246,18 @@ a {
     color: white;
     font-size: 26px;
 }
+.quantity-bar-btn img {
+    width: 12px;
+    height: auto;
+    margin-top: 2px;
+}
 
 .quantity-bar-btn.plus {
     right: -10px;
     left: auto;
+}
+.quantity-bar-btn.plus img{
+    margin-top: 0;
 }
 
 .modal_edit {
@@ -247,7 +266,7 @@ a {
 
 .modal-footer {
     position: sticky;
-    height: 87px;
+    height: auto;
     background: #106DFF;
     width: 100%;
     bottom: 0;
@@ -255,6 +274,8 @@ a {
     padding-inline: 17px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    padding-block: 20px;
 }
 
 .modal-footer-btns {
@@ -264,28 +285,33 @@ a {
 }
 
 .modal-footer-btn {
-    background: white;
-    border-radius: 30px;
-    padding: 6px 10px;
-    font-size: 15px;
-    color: #000000;
-    display: flex;
-    align-items: center;
+	background: white;
+	border-radius: 30px;
+	padding: 6px 10px;
+	font-size: 14px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+    height: 27px;
 }
 
 .modal-footer-btn .icon {
-    width: 12px;
-    height: 12px;
-    background: #106DFF;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
 
-    margin-right: 6px;
+    margin-right: 7px;
+}
+.modal-footer-btn .icon img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
 }
 
 .modal-footer-powered .icon {
     width: 30px;
     height: 30px;
-    background: white;
     margin-bottom: 5px;
 }
 
@@ -293,8 +319,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     color: white;
     margin-left: auto;
 }
@@ -313,6 +339,105 @@ a {
 
 .component-adjustment-quantity #one {
     text-indent: red;
+}
+
+
+.component-select-img.dy {
+	width: 19px;
+	height: auto;
+	margin-bottom: 9px;
+}
+.component-adjustment-icon.tiles {
+	width: 21px;
+	height: auto;
+	margin-bottom: 20px;
+	border: none;
+}
+.component-adjustment-icon.readable {
+	width: 21px;
+	height: auto;
+	margin-bottom: 20px;
+	border: none;
+    filter: invert(100%);
+}
+.component-adjustment-icon.readable {
+	width: 23px;
+	height: auto;
+	margin-bottom: 20px;
+	border: none;
+    filter: invert(100%);
+}
+.component-adjustment-icon.magnifier {
+	width: 22px;
+	height: 22px;
+}
+.component-adjustment-icon.highlight {
+	width: 30px;
+	height: auto;
+}
+.component-adjustment:hover .component-adjustment-icon img {
+    filter: invert(100%);
+}
+.component-adjustment:hover .component-adjustment-icon.readable {
+    filter: invert(0%);
+}
+.component-adjustment-icon.scale img {
+    width: 21px !important;
+    height: 21px !important;
+}
+.component-adjustment-icon.scale img {
+    width: 21px !important;
+    height: 21px !important;
+}
+.component-adjustment-icon {
+    height: auto;
+}
+.component-adjustment-icon.center img {
+    width: 21px !important;
+    height: 21px !important;
+}
+.component-adjustment-icon.drop {
+    width: 16px !important;
+}
+.component-adjustment-icon.invert {
+    width: 18px !important;
+}
+.component-adjustment-icon.mode {
+    width: 21px;
+}
+.component-adjustment-icon.pointer {
+    width: 18px;
+}
+.component-adjustment-icon.guide {
+    width: 24px;
+}
+.component-adjustment-icon.read-text  {
+    width: 27px;
+    height: auto;
+}
+.component-adjustment-icon.waves  {
+    width: 25px;
+}
+.component-adjustment.long:hover img {
+    filter: invert(0%) !important;
+}
+.component-adjustment-icon.drop:hover{
+    filter: invert(100%) ;
+}
+.form-radio form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.component-adjustment-icon.scale .spacing {
+    width: 25px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.open_modal {
+    margin: auto;
 }
 
 /* =========================  */
@@ -346,6 +471,10 @@ a {
     .component-adjustment.long {
         width: 95%;
         padding-inline: 10px;
+    }
+    .modal-footer-powered-by {
+        margin-top: 20px;
+        margin-left: auto;
     }
 }
 @media (max-width:360px) {
@@ -399,6 +528,16 @@ a {
     .modal-body {
         padding: 0px 12px;
     }
+
+    .modal-footer-btns {
+        flex-wrap: wrap;
+    }
+    .modal-footer-btn {
+        margin-bottom: 10px;
+    }
+    .form-radio form {
+        flex-wrap: wrap;
+    }
 }
 
 .form-radio {
@@ -416,12 +555,10 @@ input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /* create custom radiobutton appearance */
     display: inline-block;
     width: 30px;
     height: 30px;
-    padding: 6px;
-    /* background-color only for content */
+    padding: 3px;
     background-clip: content-box;
     background-color: white;
     border-radius: 50%;
@@ -450,8 +587,8 @@ input[type="radio"]:nth-child(8) {
 }
 
 input[type='radio']:checked:after {
-    width: 17px;
-    height: 17px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     top: -2px;
     left: -1px;
