@@ -399,6 +399,9 @@ a {
 .component-adjustment-icon.drop {
     width: 16px !important;
 }
+.component-adjustment:hover .component-adjustment-icon.drop img {
+    filter: brightness(100);
+}
 .component-adjustment-icon.invert {
     width: 18px !important;
 }
