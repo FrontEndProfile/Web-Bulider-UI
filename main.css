@@ -214,10 +214,7 @@ a {
     margin-bottom: 15px;
 }
 
-.component-adjustment:focus {
-    background: #106DFF;
-    color: white;
-}
+
 
 .component-adjustment-icon {
     width: 30px;
@@ -503,14 +500,6 @@ a {
     width: 25px;
 }
 
-.component-adjustment.long:hover img {
-    filter: invert(0%) !important;
-}
-
-.component-adjustment-icon.drop:hover {
-    filter: invert(100%);
-}
-
 .form-radio form {
     display: flex;
     text-align: center;
@@ -594,12 +583,36 @@ a {
     transform: rotate(45deg);
 }
 
-.adjustments-component .components button:focus {
+
+/* add  */
+
+.component-adjustment {
+position: relative;
+}
+.component-adjustment .checkmark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.3s ease-out;
+}
+.component-adjustment input:checked~.checkmark {
+    user-select: none;
+    border: 1px solid #106DFF;
     background: #106DFF;
     color: white;
+    transition: 0.2s ease-in-out;
 }
 
-
+.component-adjustment input:checked~.checkmark .component-adjustment-icon.drop {
+    filter: brightness(100),invert(100%);
+}
+.component-adjustment input:checked~.checkmark .component-adjustment-icon {
+	filter: invert(100%);
+}
 /* =========================  */
 /* =========================  */
 /* =========================  */
@@ -726,37 +739,37 @@ input[type="radio"] {
     height: 30px;
     padding: 3px;
     background-clip: content-box;
-    background-color: white;
+    background-color: #FF0101;
     border-radius: 50%;
 
 }
 
 input[type="radio"]:nth-child(2) {
-    background-color: red;
+    background-color: #EF6800;
 }
 
 input[type="radio"]:nth-child(3) {
-    background-color: green;
+    background-color: #0145FF;
 }
 
 input[type="radio"]:nth-child(4) {
-    background-color: greenyellow;
+    background-color: #8206FF;
 }
 
 input[type="radio"]:nth-child(5) {
-    background-color: goldenrod;
+    background-color: #1CAF00;
 }
 
 input[type="radio"]:nth-child(6) {
-    background-color: palevioletred;
+    background-color: #009DAF;
 }
 
 input[type="radio"]:nth-child(7) {
-    background-color: rgb(49, 134, 133);
+    background-color: #FFFFFF;
 }
 
 input[type="radio"]:nth-child(8) {
-    background-color: rgb(101, 98, 41);
+    background-color: #000000;
 }
 
 input[type='radio']:checked:after {
